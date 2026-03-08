@@ -1,34 +1,18 @@
 class AppleRemindersMcp < Formula
   desc "MCP server for Apple Reminders via EventKit"
   homepage "https://github.com/0xalexb/apple-reminders-mcp"
-  version "1.0.0"
+  url "https://github.com/0xalexb/apple-reminders-mcp/releases/download/v1.0.2/apple-reminders-mcp"
+  sha256 "2824de59a47c8dbb4576f65603bdb1ad79ea8a47b83cc9eb111916c86fb90dab"
   license "MIT"
 
   depends_on :macos
   depends_on "uv"
 
   def install
-    (bin/"apple-reminders-mcp").write <<~EOS
-      #!/bin/bash
-      VERSION="#{version}"
-      CACHE_MARKER="${HOME}/.cache/apple-reminders-mcp-version"
-
-      # Clean old uvx cache if version changed
-      if [ -f "$CACHE_MARKER" ]; then
-          OLD_VERSION=$(cat "$CACHE_MARKER")
-          if [ "$OLD_VERSION" != "$VERSION" ]; then
-              uv cache prune --quiet 2>/dev/null
-          fi
-      fi
-      mkdir -p "$(dirname "$CACHE_MARKER")"
-      echo "$VERSION" > "$CACHE_MARKER"
-
-      exec uvx --from "git+https://github.com/0xalexb/apple-reminders-mcp@v${VERSION}" apple-reminders-mcp "$@"
-    EOS
+    bin.install "apple-reminders-mcp"
   end
 
   test do
     assert_match "apple-reminders-mcp", shell_output("#{bin}/apple-reminders-mcp --version 2>&1")
   end
 end
-
