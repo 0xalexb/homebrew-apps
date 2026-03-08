@@ -1,7 +1,7 @@
 class AppleRemindersMcp < Formula
   desc "MCP server for Apple Reminders via EventKit"
   homepage "https://github.com/0xalexb/apple-reminders-mcp"
-  version "0.1.0"
+  version "1.0.0"
   license "MIT"
 
   depends_on :macos
