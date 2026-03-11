@@ -1,9 +1,9 @@
 class AppleCalendarMcp < Formula
   desc "MCP server for Apple Calendar via EventKit"
   homepage "https://github.com/0xalexb/apple-calendar-mcp"
-  url "https://github.com/0xalexb/apple-calendar-mcp/releases/download/v1.0.3/apple-calendar-mcp"
-  sha256 "c78ab2cf3a690a50dd51c1bc9e1f97c5b1cb708359d05b9fa1f32cf21bb1617b"
-  version "1.0.3"
+  url "https://github.com/0xalexb/apple-calendar-mcp/releases/download/v1.0.4/apple-calendar-mcp"
+  sha256 "068edb612ee7c7662941f703ed95ad843fe6a110b8fac0bffc6f197130991b26"
+  version "1.0.4"
   license "MIT"
 
   depends_on :macos
