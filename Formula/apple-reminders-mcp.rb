@@ -1,9 +1,9 @@
 class AppleRemindersMcp < Formula
   desc "MCP server for Apple Reminders via EventKit"
   homepage "https://github.com/0xalexb/apple-reminders-mcp"
-  url "https://github.com/0xalexb/apple-reminders-mcp/releases/download/v1.1.1/apple-reminders-mcp"
-  sha256 "1b5d9197633e2da585b163acc3816e4dd7a2ff0152a01d839b924d617e9a7389"
-  version "1.1.1"
+  url "https://github.com/0xalexb/apple-reminders-mcp/releases/download/v1.1.2/apple-reminders-mcp"
+  sha256 "7930b41ca54a8a482cc87f2c3baebb1a514f6a6877b841dbcfa8b023ed1a058a"
+  version "1.1.2"
   license "MIT"
 
   depends_on :macos
