@@ -1,9 +1,9 @@
 class AppleMailMcp < Formula
   desc "MCP server for Apple Mail via AppleScript"
   homepage "https://github.com/0xalexb/apple-mail-mcp"
-  url "https://github.com/0xalexb/apple-mail-mcp/releases/download/v1.0.1/apple-mail-mcp"
-  sha256 "2772d9f3f6b4b8eaba7f4bc70dbbea6c460b83fcfb9c16ae5b2dc0a792f838b1"
-  version "1.0.1"
+  url "https://github.com/0xalexb/apple-mail-mcp/releases/download/v1.0.2/apple-mail-mcp"
+  sha256 "2482741644d5eff8f4def757284f1939ee0bea7e3c504a6f1757b9ab6dadf7c7"
+  version "1.0.2"
   license "MIT"
 
   depends_on :macos
